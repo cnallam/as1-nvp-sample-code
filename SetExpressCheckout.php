@@ -22,11 +22,11 @@ $returnURL = "https://rmcgovernppl-tech.com/qa/QLeap/create_sale_NVPexample/DoEx
 $cancelURL = "https://rmcgovernppl-tech.com/qa/Main.html";
 
 // Construct the parameter string that describes the SetExpressCheckout API call
-$paymentAmount = $_REQUEST["PaymentAmount"];
+$paymentAmount = 10;
   $_SESSION["PaymentAmount"] = $paymentAmount; //store for next API call 
 $paymentType = $_REQUEST["PaymentType"];
   $_SESSION["PaymentType"] = $paymentType;		//store for next API call 
-$currencyCodeType = $_REQUEST["currencyCodeType"];
+$currencyCodeType = "USD";
   $_SESSION["currencyCodeType"] = $currencyCodeType;	// store for next API call 
 
 
